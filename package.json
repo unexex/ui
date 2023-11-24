@@ -1,12 +1,12 @@
 {
-  "name": "@medusajs/ui",
-  "version": "2.2.2",
-  "author": "Kasper Kristensen <kasper@medusajs.com>",
+  "name": "@unexex/ui",
+  "version": "1.0.0",
+  "author": "AsynchronousAI",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/medusajs/medusa.git",
-    "directory": "packages/design-system/ui"
+    "url": "https://github.com/unexex/ui.git",
+    "directory": "/"
   },
   "main": "./dist/cjs/index.js",
   "types": "./dist/cjs/index.d.ts",
