@@ -54,5 +54,6 @@ export const Regular: Story = {
     args: {
         variant: "body",
         children: "I am a typography component",
+        color: "white",
     },
 }

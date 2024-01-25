@@ -11,7 +11,7 @@ const TypographyWrap = styled.p`
     margin-bottom: 1em;
   ` : ``}
   ${({ color = "primary" }) => color ? `
-    color: var(--label-${color}-color);
+    color: ${color};
   ` : ``}
 `;
 
