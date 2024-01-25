@@ -18,19 +18,19 @@ type Story = StoryObj<typeof CodeBlock>
 
 const snippets = [
   {
-    label: "cURL",
-    language: "markdown",
-    code: `curl -H 'x-publishable-key: YOUR_API_KEY' 'http://localhost:9000/store/products/PRODUCT_ID'`,
+    label: "NPM",
+    language: "bash",
+    code: `npm i unexex/ui`,
   },
   {
-    label: "Medusa JS Client",
+    label: "JS",
     language: "jsx",
-    code: `// Install the JS Client in your storefront project: @medusajs/medusa-js\n\nimport Medusa from "@medusajs/medusa-js"\n\nconst medusa = new Medusa({ publishableApiKey: "YOUR_API_KEY"})\nconst product = await medusa.products.retrieve("PRODUCT_ID")\nconsole.log(product.id)`,
+    code: `console.log("Hi!");`
   },
   {
-    label: "Medusa React",
+    label: "TS",
     language: "tsx",
-    code: `// Install the React SDK and required dependencies in your storefront project:\n// medusa-react @tanstack/react-query @medusajs/medusa\n\nimport { useProduct } from "medusa-react"\n\nconst { product } = useProduct("PRODUCT_ID")\nconsole.log(product.id)`,
+    code: `console.log("Hi!");`,
   },
 ]
 
@@ -51,18 +51,8 @@ export const Default: Story = {
   },
 }
 
-const code = `medusa develop
-✔ Models initialized – 14ms
-✔ Repositories initialized – 35ms
-✔ Strategies initialized – 24ms
-✔ Modules initialized – 1ms
-✔ Database initialized – 654ms
-✔ Services initialized – 7ms
-✔ Express intialized – 5ms
-✔ Plugins intialized – 7ms
-✔ Subscribers initialized – 6ms
-✔ API initialized – 28ms
-✔ Server is ready on port: 9000`
+const code = `echo "Hello, World!"
+Hello, World!`
 
 export const ManyLines: Story = {
   render: () => {
